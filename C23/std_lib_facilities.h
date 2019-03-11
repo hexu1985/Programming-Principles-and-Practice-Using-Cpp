@@ -12,10 +12,9 @@
 #include <stdexcept>
 #include <string>
 #include <sstream>
-#include <boost/regex.hpp>
+#include <regex>
 
 using namespace std;
-using namespace boost;
 
 //------------------------------------------------------------------------------
 

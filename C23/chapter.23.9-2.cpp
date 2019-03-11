@@ -42,8 +42,8 @@ try
     regex row( "^[\\w ]+(	\\d+)(	\\d+)(	\\d+)$");
 
     if (getline(in,line)) {        // check header line
-        boost::smatch matches;
-        if (!boost::regex_search(line, matches, header)) {
+        std::smatch matches;
+        if (!std::regex_search(line, matches, header)) {
             error("no header");
         }
     }

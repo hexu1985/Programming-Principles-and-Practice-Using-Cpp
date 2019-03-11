@@ -4,15 +4,12 @@
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
-#include <boost/regex.hpp>
+#include <regex>
 #include <iostream>
 #include <stdexcept>
 #include <string>
 
 using namespace std;
-
-//------------------------------------------------------------------------------
-using namespace boost;
 
 int main()
 try

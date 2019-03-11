@@ -4,12 +4,11 @@
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
-#include <boost/regex.hpp>
+#include <regex>
 #include <iostream>
 #include <string>
 
 using namespace std;
-using namespace boost;
 
 //------------------------------------------------------------------------------
 
@@ -34,9 +33,9 @@ int main()
 
     try {
         pattern = pat;       // this checks pat
-        cout << "pattern: " << pattern << '\n';
+        cout << "pattern: " << pat << '\n';
     }
-    catch (bad_expression) {
+    catch (regex_error) {
         cout << pat << " is not a valid regular expression\n";
         exit(1);
     }

@@ -12,7 +12,7 @@
 
 INCLUDES = -I"$(BOOST)"
 LIBS     = -lstdc++
-CXXFLAGS = $(INCLUDES) -Wall -time -O3 -DNDEBUG
+CXXFLAGS = $(INCLUDES) -Wall -time -O3 -DNDEBUG -std=c++11
 LIBFLAGS = 
 AR       = ar
 
@@ -22,7 +22,7 @@ AR       = ar
 #       or create a symbolic link with the above name to appropriate version
 #       of the library: 
 #       ln -s /usr/lib/libboost_regex-gcc34-mt.a ./libboost_regex.a
-LIBS := $(LIBS) -lboost_regex
+LIBS := $(LIBS)
 
 .SUFFIXES: .cpp .o
 
