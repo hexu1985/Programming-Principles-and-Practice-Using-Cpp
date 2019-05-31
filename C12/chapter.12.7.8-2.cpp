@@ -42,7 +42,7 @@ try
     win.attach(sine);
     sine.set_color(Color::blue);         // we changed our mind about sine's color
 
-    Graph_lib::Polygon poly;                        // a polygon, a Graph_lib::Polygon is a kind of Shape
+    Graph_lib::Polygon poly;                        // a polygon, a Polygon is a kind of Shape
     poly.add(Point(300,200));            // three points makes a triangle
     poly.add(Point(350,100));
     poly.add(Point(400,200));

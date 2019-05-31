@@ -1,6 +1,6 @@
 
 //
-// This is example code from Chapter 13.8 "Graph_lib::Polygon" of
+// This is example code from Chapter 13.8 "Polygon" of
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 

@@ -1,6 +1,6 @@
 
 //
-// This is example code from Chapter 13.13 "Graph_lib::Ellipse" of
+// This is example code from Chapter 13.13 "Ellipse" of
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
