@@ -15,7 +15,7 @@ using namespace std;
 
 //------------------------------------------------------------------------------
 
-struct Lines_window : Window_ {
+struct Lines_window : Graph_lib::Window {
     Lines_window(Point xy, int w, int h, const string& title );
     Open_polyline lines;
 private:
@@ -34,7 +34,7 @@ private:
 //------------------------------------------------------------------------------
 
 Lines_window::Lines_window(Point xy, int w, int h, const string& title)
-    :Window_(xy,w,h,title),
+    :Graph_lib::Window(xy,w,h,title),
     next_button(Point(x_max()-150,0), 70, 20, "Next point", cb_next),
     quit_button(Point(x_max()-70,0), 70, 20, "Quit", cb_quit),
     next_x(Point(x_max()-310,0), 50, 20, "next x:"),

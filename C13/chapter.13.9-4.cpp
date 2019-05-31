@@ -1,6 +1,6 @@
 
 //
-// This is example code from Chapter 13.9 "Rectangle_" of
+// This is example code from Chapter 13.9 "Graph_lib::Rectangle" of
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
@@ -14,13 +14,13 @@ try
 {
     using namespace Graph_lib;   // our graphics facilities are in Graph_lib
 
-    Simple_window win(Point(100,100),600,400,"Rectangle_");
+    Simple_window win(Point(100,100),600,400,"Graph_lib::Rectangle");
 
-    Rectangle_ rect00(Point(150,100),200,100); 
-    Rectangle_ rect11(Point(50,50),Point(250,150)); 
-    Rectangle_ rect12(Point(50,150),Point(250,250)); // just  below rect11
-    Rectangle_ rect21(Point(250,50),200,100);        // just to the right of rect11
-    Rectangle_ rect22(Point(250,150),200,100);       // just below rect21
+    Graph_lib::Rectangle rect00(Point(150,100),200,100); 
+    Graph_lib::Rectangle rect11(Point(50,50),Point(250,150)); 
+    Graph_lib::Rectangle rect12(Point(50,150),Point(250,250)); // just  below rect11
+    Graph_lib::Rectangle rect21(Point(250,50),200,100);        // just to the right of rect11
+    Graph_lib::Rectangle rect22(Point(250,150),200,100);       // just below rect21
 
     rect00.set_fill_color(Color::yellow);
     rect11.set_fill_color(Color::blue);

@@ -1,6 +1,6 @@
 
 //
-// This is example code from Chapter 13.13 "Ellipse_" of
+// This is example code from Chapter 13.13 "Graph_lib::Ellipse" of
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
@@ -16,9 +16,9 @@ try
 
     Simple_window win(Point(100,100),600,400,"Ellipses");
 
-    Ellipse_ e1(Point(200,200),50,50);
-    Ellipse_ e2(Point(200,200),100,50);
-    Ellipse_ e3(Point(200,200),100,150);
+    Graph_lib::Ellipse e1(Point(200,200),50,50);
+    Graph_lib::Ellipse e2(Point(200,200),100,50);
+    Graph_lib::Ellipse e3(Point(200,200),100,150);
 
     win.attach(e1);
     win.attach(e2);

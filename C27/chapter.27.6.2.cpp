@@ -4,7 +4,8 @@
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
-#include <stdio.h>
+#include <cstdio>
+#include <cstdlib>
 #include <iostream>
 #include <string>
 

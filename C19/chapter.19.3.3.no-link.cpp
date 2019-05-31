@@ -30,7 +30,7 @@ int main()
 
 void f(vector<Shape*>& v)
 {
-    v.push_back(new Rectangle_(Point(0,0),Point(100,100)));
+    v.push_back(new Graph_lib::Rectangle(Point(0,0),Point(100,100)));
 }
 
 //------------------------------------------------------------------------------

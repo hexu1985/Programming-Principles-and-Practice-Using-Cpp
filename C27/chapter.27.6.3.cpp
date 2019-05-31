@@ -4,6 +4,7 @@
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
+#include <cstdio>
 #include "std_lib_facilities.h"
 
 //------------------------------------------------------------------------------

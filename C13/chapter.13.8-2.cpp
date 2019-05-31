@@ -1,6 +1,6 @@
 
 //
-// This is example code from Chapter 13.8 "Polygon_" of
+// This is example code from Chapter 13.8 "Graph_lib::Polygon" of
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
@@ -14,9 +14,9 @@ try
 {
     using namespace Graph_lib;   // our graphics facilities are in Graph_lib
 
-    Simple_window win(Point(100,100),600,400,"Polygon_");
+    Simple_window win(Point(100,100),600,400,"Graph_lib::Polygon");
 
-    Polygon_ poly;
+    Graph_lib::Polygon poly;
 
     poly.add(Point(100,100));
     poly.add(Point(150,200));

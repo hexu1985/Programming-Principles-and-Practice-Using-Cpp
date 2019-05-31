@@ -11,7 +11,7 @@
 
 void f(Simple_window& w)
 {
-    Rectangle_ r(Point(100,200),50,30);
+    Graph_lib::Rectangle r(Point(100,200),50,30);
     w.attach(r);
 }    // oops, the lifetime of r ends here
 

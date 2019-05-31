@@ -15,7 +15,7 @@ using namespace std;
 
 //------------------------------------------------------------------------------
 
-struct Lines_window : Window_ {
+struct Lines_window : Graph_lib::Window {
     Lines_window(Point xy, int w, int h, const string& title );
 private:
     // Data:
@@ -54,7 +54,7 @@ private:
 //------------------------------------------------------------------------------
 
 Lines_window::Lines_window(Point xy, int w, int h, const string& title)
-    :Window_(xy,w,h,title),
+    :Graph_lib::Window(xy,w,h,title),
     color_menu(Point(x_max()-70,30),70,20,Menu::vertical,"color"),
     menu_button(Point(x_max()-80,30), 80, 20, "color menu", cb_menu),
     next_button(Point(x_max()-150,0), 70, 20, "Next point", cb_next),

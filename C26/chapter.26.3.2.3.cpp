@@ -8,6 +8,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <cstdlib>
 
 using namespace std;
 
@@ -60,7 +61,7 @@ int main()
     int no_of_tests = rand_int(10);       // make about 5 tests
     for (int i = 0; i<no_of_tests; ++i) {
         string lab = "rand_test_";
-        make_test(lab+to_string(i),       // to_string from §23.2
+        make_test(lab+to_string(i),       // to_string from ?23.2
             rand_int(500),                // number of elements
             0,                            // base
             rand_int(50));                // spread

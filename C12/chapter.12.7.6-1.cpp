@@ -1,6 +1,6 @@
 
 //
-// This is example code from Chapter 12.7.6 "Rectangle_s" of
+// This is example code from Chapter 12.7.6 "Graph_lib::Rectangles" of
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
@@ -42,7 +42,7 @@ try
     win.attach(sine);
     sine.set_color(Color::blue);         // we changed our mind about sine's color
 
-    Polygon_ poly;                        // a polygon, a Polygon_ is a kind of Shape
+    Graph_lib::Polygon poly;                        // a polygon, a Graph_lib::Polygon is a kind of Shape
     poly.add(Point(300,200));            // three points makes a triangle
     poly.add(Point(350,100));
     poly.add(Point(400,200));
@@ -51,7 +51,7 @@ try
     poly.set_style(Line_style::dash);
     win.attach(poly);
 
-    Rectangle_ r(Point(200,200), 100, 50);// top-left corner, width, height
+    Graph_lib::Rectangle r(Point(200,200), 100, 50);// top-left corner, width, height
     win.attach(r); 
 
     Closed_polyline poly_rect;

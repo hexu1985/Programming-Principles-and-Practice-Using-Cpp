@@ -12,12 +12,12 @@
 int main()
 try
 {
-    Vector_ref<Rectangle_> rect;
+    Vector_ref<Graph_lib::Rectangle> rect;
 
-    Rectangle_ x(Point(100,200),Point(200,300));
+    Graph_lib::Rectangle x(Point(100,200),Point(200,300));
     rect.push_back(x);    // add named 
 
-    rect.push_back(new Rectangle_(Point(50,60),Point(80,90))); // add unnamed
+    rect.push_back(new Graph_lib::Rectangle(Point(50,60),Point(80,90))); // add unnamed
 
     for (int i=0; i<rect.size(); ++i) rect[i].move(10,10);    // use rect
 }
