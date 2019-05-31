@@ -134,7 +134,7 @@ bool line_segment_intersect(Point p1, Point p2, Point p3, Point p4, Point& inter
 
 //------------------------------------------------------------------------------
 
-void Polygon_::add(Point p)
+void Polygon::add(Point p)
 {
     int np = number_of_points();
 
@@ -158,9 +158,9 @@ void Polygon_::add(Point p)
 
 //------------------------------------------------------------------------------
 
-void Polygon_::draw_lines() const
+void Polygon::draw_lines() const
 {
-    if (number_of_points() < 3) error("less than 3 points in a Polygon_");
+    if (number_of_points() < 3) error("less than 3 points in a Polygon");
     Closed_polyline::draw_lines();
 }
 
@@ -217,7 +217,7 @@ void Marked_polyline::draw_lines() const
 
 //------------------------------------------------------------------------------
 
-void Rectangle_::draw_lines() const
+void Rectangle::draw_lines() const
 {
     if (fill_color().visibility()) {    // fill
         fl_color(fill_color().as_int());
@@ -255,7 +255,7 @@ void Circle::draw_lines() const
 
 //------------------------------------------------------------------------------
 
-void Ellipse_::draw_lines() const
+void Ellipse::draw_lines() const
 {
     if (color().visibility())
         fl_arc(point(0).x,point(0).y,w+w,h+h,0,360);
@@ -368,7 +368,7 @@ bool can_open(const string& s)
 // check if a file named s exists and can be opened for reading
 {
     ifstream ff(s.c_str());
-    return !!ff;
+    return static_cast<bool>(ff);
 }
 
 //------------------------------------------------------------------------------

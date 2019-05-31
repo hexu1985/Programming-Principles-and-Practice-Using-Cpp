@@ -23,14 +23,14 @@ namespace Graph_lib
 
 //------------------------------------------------------------------------------
 
-    class Window_ : public Fl_Window { 
+    class Window : public Fl_Window { 
     public:
         // let the system pick the location:
-        Window_(int w, int h, const string& title);
+        Window(int w, int h, const string& title);
         // top left corner in xy
-        Window_(Point xy, int w, int h, const string& title);    
+        Window(Point xy, int w, int h, const string& title);    
 
-        virtual ~Window_() { }
+        virtual ~Window() { }
 
         int x_max() const { return w; }
         int y_max() const { return h; }

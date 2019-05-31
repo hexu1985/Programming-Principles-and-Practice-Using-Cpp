@@ -12,7 +12,7 @@
 
 namespace Graph_lib {
 
-Window_::Window_(int ww, int hh, const string& title)
+Window::Window(int ww, int hh, const string& title)
     :Fl_Window(ww,hh,title.c_str()),w(ww),h(hh)
 {
     init();
@@ -20,7 +20,7 @@ Window_::Window_(int ww, int hh, const string& title)
 
 //------------------------------------------------------------------------------
 
-Window_::Window_(Point xy, int ww, int hh, const string& title)
+Window::Window(Point xy, int ww, int hh, const string& title)
     :Fl_Window(xy.x,xy.y,ww,hh,title.c_str()),w(ww),h(hh)
 { 
     init();
@@ -28,7 +28,7 @@ Window_::Window_(Point xy, int ww, int hh, const string& title)
 
 //------------------------------------------------------------------------------
 
-void Window_::init()
+void Window::init()
 {
     resizable(this);
     show();
@@ -36,7 +36,7 @@ void Window_::init()
 
 //------------------------------------------------------------------------------
 
-void Window_::draw()
+void Window::draw()
 {
     Fl_Window::draw();
     for (unsigned int i=0; i<shapes.size(); ++i) shapes[i]->draw();
@@ -44,7 +44,7 @@ void Window_::draw()
 
 //------------------------------------------------------------------------------
 
-void Window_::attach(Widget& w)
+void Window::attach(Widget& w)
 {
     begin();         // FTLK: begin attaching new Fl_Wigets to this window
     w.attach(*this); // let the Widget create its Fl_Wigits
@@ -53,14 +53,14 @@ void Window_::attach(Widget& w)
 
 //------------------------------------------------------------------------------
 
-void Window_::detach(Widget& b)
+void Window::detach(Widget& b)
 {
     b.hide();
 }
 
 //------------------------------------------------------------------------------
 
-void Window_::detach(Shape& s)
+void Window::detach(Shape& s)
     // guess that the last attached will be first released
 {
     for (unsigned int i = shapes.size(); 0<i; --i)    
@@ -70,7 +70,7 @@ void Window_::detach(Shape& s)
 
 //------------------------------------------------------------------------------
 
-void Window_::put_on_top(Shape& p) {
+void Window::put_on_top(Shape& p) {
     for (int i=0; i<shapes.size(); ++i) {
         if (&p==shapes[i]) {
             for (++i; i<shapes.size(); ++i)
